@@ -17,6 +17,6 @@ class Client
 
   def connect
     @connection = Connection.new('192.168.1.1')
-    @connection.connect(Socket.ip_address_list.ip_address)
+    @connection.connect(Socket.ip_address_list.first.ip_address)
   end
 end
